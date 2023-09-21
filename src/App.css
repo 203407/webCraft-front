@@ -1,0 +1,203 @@
+:root {
+  --main-color: #FAFAFA;
+  --secondary-color: #F4F4F4;
+  --detail-color: #D3DEF5;
+  --accent-color: #0f42f97c;
+  --main-text-color: #303030;
+  --secondary-text-color: #606060;
+  --icon-color: rgba(167, 167, 165, 0.75);
+
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  background-color: var(--detail-color);
+  color: var(--main-text-color);
+  display: flex;
+  align-items: center;
+  height: 7.5em;
+  margin-top: -2em;
+  padding: 1em 4.5em;
+}
+
+h1{
+  color: var(--main-text-color);
+  margin-bottom: 0;
+}
+
+p { 
+  color: var(--secondary-text-color);
+}
+
+.page-title {
+  color: var(--main-text-color);
+  display: flex;
+  gap: 1em;
+  padding-bottom: 3rem;
+  padding-top: 1em;
+}
+
+
+
+.subtitle {
+  margin-top: 35px;
+}
+
+.main-btn{
+  background-color: var(--detail-color);
+  border: 0.1px solid rgb(226, 226, 226);
+  border-radius: 0.6em;
+  color: var(--secondary-text-color);
+  font-size: 1rem;
+  font-weight: 600;
+  height: 3.5em;
+  width: 13.25em;
+  outline: none;
+}
+
+main{
+  margin-left: 90px;
+  padding: 1.5em 3.5em;
+  width: calc(100% -90px);
+  display: flex;
+  flex-direction: column;
+}
+
+.main-btn:hover{
+  background-color: var(--main-text-color);
+  color: var(--main-color);
+}
+
+.content{
+  padding-top: 1.75em;
+}
+
+/* Estilos para componente Login */
+
+.main-container-login{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.login-form{
+  background-color: var(--main-color);
+  border-radius: 1em;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  width: 400px;
+  height: 34em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.login-top{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+  height: 6.5em;
+}
+
+.login-mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 1.5em;
+  width: 75%;
+  height: 35%;
+  padding: 0.1em 0em ;
+}
+
+.form-input{
+  background-color: #ffffff;
+  border: 0.15px solid rgb(226, 226, 226);
+  border-radius: 0.5em;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 6px;
+  color: var(--secondary-text-color);
+  font-size: 1rem;
+  height: 42px;
+  outline: none;
+  padding: 0.15em 0.65em;
+  padding-right: 2.25em;
+}
+
+.form-input:focus{
+  border: 1.65px solid var(--detail-color)
+}
+
+.passw-container{
+  display: flex;
+  align-items: center;
+}
+
+.passw-container input {
+  width: calc(100% - 3em)
+}
+
+.icon-passw{
+  margin-left: -2em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+/* Estilos para componente Sidebar */
+
+.sidebar {
+  position: absolute;
+  top: 17%;
+  left: -100px;
+  width: 90px;
+  height: calc(100vh - 7.5em);
+  background-color: var(--secondary-color);
+  transition: left 0.5s;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar .menu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  padding: 2em 0em;
+}
+
+.div-informe{
+
+  padding-bottom: 3em;
+}
+
+.card-informe{
+  width: 50rem;
+  padding-right: 2em;
+}
+
+.card-informe-down{
+  width: 20rem;
+  padding-right: 2em;
+  padding-top: 1.7em;
+}
+.card-informe-down2{
+  width: 30rem;
+  padding-right: 2em;
+  padding-top: 5em;
+  
+}
+.card-informe-down3{
+  width: 25rem;
+  padding-right: 2em;
+  padding-top: 3.4em;
+}
+.div-informe-down{
+  padding-top: 2em;
+}
