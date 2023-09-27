@@ -84,12 +84,33 @@ main{
   padding: 0;
 }
 
+.main-container-register{
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
 .login-form{
   background-color: var(--main-color);
   border-radius: 1em;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
   width: 400px;
   height: 34em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.register-form{
+  background-color: var(--main-color);
+  border-radius: 1em;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  width: 1000px;
+  height: 35em;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
