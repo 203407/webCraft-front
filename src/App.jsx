@@ -12,6 +12,7 @@ function App() {
           <Route path='/' element={<Login/>}/>
           <Route path='/inicio' element={<Home/>}/>
           <Route path='/informe' element={<Informe/>}/>
+          <Route path='/informe/:nombre' element={<Informe/>}/> {/* Ruta dinámica */}
           <Route path='/register' element={<Register/>}/>
         </Routes>
       </Router>

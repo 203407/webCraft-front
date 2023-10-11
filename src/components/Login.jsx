@@ -16,7 +16,9 @@ function Login() {
 
   const handleLogin = async (event) => {
     event.preventDefault();
+    
     const postData = {"passw":password,"usuario":email}
+
     try {
       const response = await fetch('http://localhost:3000/usuario/login', {
         method: 'POST',

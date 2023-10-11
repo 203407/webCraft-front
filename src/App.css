@@ -185,12 +185,12 @@ main{
 .card-informe-down{
   width: 20rem;
   padding-right: 2em;
-  padding-top: 1.7em;
+  padding-top: 3em;
 }
 .card-informe-down2{
   width: 30rem;
   padding-right: 2em;
-  padding-top: 5em;
+  padding-top: 3em;
   
 }
 .card-informe-down3{
@@ -200,4 +200,11 @@ main{
 }
 .div-informe-down{
   padding-top: 2em;
+}
+
+
+.alerta{
+  color: rgb(123, 202, 4);
+  margin-top: 0.5em;
+  margin-left: 2em;
 }
