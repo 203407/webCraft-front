@@ -208,3 +208,8 @@ main{
   margin-top: 0.5em;
   margin-left: 2em;
 }
+
+.alertaError{
+  color: red;
+  margin-left: 4.5em;
+}

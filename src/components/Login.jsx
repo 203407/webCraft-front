@@ -5,8 +5,10 @@ import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai"
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
   const [showPassword, setShowPassword] = useState(false);
+
+  const [mostrarAlerta, setMostrarAlerta] = useState(false);
+  const [mensajeAlerta, setMensajeAlerta] = useState('');
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
@@ -29,7 +31,11 @@ function Login() {
       });
 
       if (!response.ok) {
+        setMensajeAlerta('Error al inicar sesion');
+        setMostrarAlerta(true);
+        console.log("error")
         throw new Error('Error en la respuesta de la API');
+       
       }else{
         const responseData = await response.json();
         console.log((JSON.stringify(responseData, null, 2)));
@@ -37,6 +43,7 @@ function Login() {
       }
       
     } catch (error) {
+      console.log("error")
       console.error('Error al realizar la petición POST:', error);
     }
   };
@@ -74,12 +81,18 @@ function Login() {
                 }
               </div>
               </div>
+              {mostrarAlerta && (
+        <div className="alertaError">
+              {mensajeAlerta}
+                </div>
+                )}
             </div>
             <div className="login-bottom">
               <button type="button" className="main-btn" onClick={handleLogin}>
                 Iniciar sesión
               </button>
             </div>
+
           </div>
         </div>
       </body>
